@@ -1,0 +1,39 @@
+
+        body{
+            height: 100vh;
+            background-color:rgba(0, 0, 0, 0.904);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            color: white;
+            font-size: 200px;
+            position: relative;     
+            &::before{
+            content: "LAXMAN";
+            position: absolute;
+            color: yellow;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            border-right: 2px solid yellow;
+            border-right-width: 15px;
+            animation: text 0.5s linear infinite alternate;
+            }
+        }
+        @keyframes text{
+            0%{
+                width: 0%;
+            }
+            25%{
+                width: 25%;
+            }
+            50%{
+                width: 50%;
+            }
+            100%{
+                width: 100%;
+            }
+        }
